@@ -224,3 +224,44 @@ footer .social-icons img {
     margin: 0 auto;
   }
 
+.contact-info, .employees, .contact-form {
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 1rem;
+}
+
+.contact-info iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  margin-top: 1rem;
+}
+
+.employees {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.employees img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  background-color: #0077cc;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
