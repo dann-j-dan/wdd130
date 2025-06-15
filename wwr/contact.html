@@ -18,7 +18,7 @@
 
 <body>
   <header>
-    <img src="images/crossdoors.jpeg" alt="Ratfting Company Logo">
+    <img src="images/crossdoors.jpeg" alt="Ratfting Company Logo" style="width: 140px; height: 140px;">
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -29,45 +29,61 @@
     </nav>
   </header>
 
-  <main>
-    <section class="contact-info">
-      <h2>Contact Information</h2>
-      <p>📍 123 Riverbend Way, Rapids Town, CO 80808</p>
-      <p>📞 (800) 555-RAFT</p>
-      <p>📧 contact@whitewaterrafting.com</p>
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.546947494878!2d-74.0059411845936!3d40.7127759793316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f131!3m3!1m2!1s0x89c25a316a06e749%3A0xdcd349dc6ad0f78e!2sWhite%20Water%20Rafting%20Adventures!5e0!3m2!1sen!2sus!4v1590000000000!5m2!1sen!2sus" 
-        width="600" 
-        height="450" 
-        loading="lazy">
-      </iframe>
-    </section>
-    <section class="contact-form">
-      <h2>Send Us a Message</h2>
-      <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <p>Purpose of Message:</p>
-        <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label>
-        <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label>
-        <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <label><input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter</label>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-    <section>
-      <h2>Adventure Awaits You!</h2>
-      <img src="images/Image03.jpg" alt="Image3">
-      <img src="images/Image04.jpg" alt="Image4">
-      <img src="images/Image05.jpg" alt="Image5">
-    </section>
+  <main style="display: flex; flex-direction: row; align-items: flex-start; gap: 2rem; justify-content: flex-start;">
+    <div style="flex: 2;">
+      <section class="contact-info" style="max-width: 400px; text-align: left; margin-bottom: 2rem;">
+        <h2>Contact Information</h2>
+        <p>📍 123 Riverbend Way, Rapids Town, CO 80808</p>
+        <p>📞 (800) 555-RAFT</p>
+        <p>📧 contact@whitewaterrafting.com</p>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.546947494878!2d-74.0059411845936!3d40.7127759793316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f131!3m3!1m2!1s0x89c25a316a06e749%3A0xdcd349dc6ad0f78e!2sWhite%20Water%20Rafting%20Adventures!5e0!3m2!1sen!2sus!4v1590000000000!5m2!1sen!2sus" 
+          width="100%" 
+          height="500" 
+          loading="lazy"
+          style="display: block; margin-top: 1rem; border: 1px solid #ccc; max-width: 100%;">
+        </iframe>
+      </section>
+    </div>
+    <div style="flex: 1; min-width: 350px;">
+      <section class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <p>Purpose of Message:</p>
+          <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label>
+          <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label>
+          <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <label><input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter</label>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </div>
   </main>
+  <section>
+    <h2 style="text-align: center; font-size: 2.8rem;">Adventure Awaits You</h2>
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem; flex-wrap: wrap; width: 100vw; max-width: 100vw; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%);">
+      <div style="text-align: center; flex: 1;">
+        <img src="images/Image03.jpg" alt="Image3" style="width: 200px; height: 160px; object-fit: cover; background: #ccc; display: block; margin: 0 auto;">
+        <p style="margin-top: 0.5rem; color: #2b0bb8; font-weight: bold;">Thrilling Rapids Experience</p>
+      </div>
+      <div style="text-align: center; flex: 1;">
+        <img src="images/Image04.jpg" alt="Image4" style="width: 200px; height: 160px; object-fit: cover; background: #ccc; display: block; margin: 0 auto;">
+        <p style="margin-top: 0.5rem; color: #2b0bb8; font-weight: bold;">Scenic River Views</p>
+      </div>
+      <div style="text-align: center; flex: 1;">
+        <img src="images/Image05.jpg" alt="Image5" style="width: 200px; height: 160px; object-fit: cover; background: #ccc; display: block; margin: 0 auto;">
+        <p style="margin-top: 0.5rem; color: #2b0bb8; font-weight: bold;">Teamwork on the Water</p>
+      </div>
+    </div>
+  </section>
   <footer>
-    <p>&copy; 2023 White Water Rafting Company | Lubangakene Daniel</p>
+    <p>&copy; 2025 White Water Rafting Company | Lubangakene Daniel</p>
     <p><a href="images/Wireframe.png" target="_blank">View Contact Page Wireframe</a></p>
     <nav class="socialmedia">
       <a href="https://facebook.com">
