@@ -14,11 +14,68 @@
   <link rel="stylesheet" href="styles/rafting.css">
   <link rel="stylesheet" href="styles/rafting.css">
 
-</head>
+  <style>
+    .history-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .history {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .history-text {
+      flex: 1;
+      font-size: 1.3rem;
+    }
+
+    .history-text-right {
+      text-align: right;
+    }
+
+    .history-text-left {
+      text-align: left;
+    }
+
+    .history-img {
+      width: 220px;
+      height: auto;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      display: block;
+    }
+
+  
+  </style>
+</head> 
+
+
+.adventure,
+    .adventure .gallery,
+    .adventure .gallery-item {
+      /* shared styles here */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      /* shared input styles */
+    }
+
+    .hero,
+    .hero .content,
+    .hero .text,
+    .hero h1 {
+      /* shared styles */
+    }
 
 <body>
   <header>
     <img src="images/crossdoors.jpeg" alt="Ratfting Company Logo" style="width: 140px; height: 140px;">
+    <h1>Contact White Water Rafting Company</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -29,9 +86,9 @@
     </nav>
   </header>
 
-  <main style="display: flex; flex-direction: row; align-items: flex-start; gap: 2rem; justify-content: flex-start;">
-    <div style="flex: 2;">
-      <section class="contact-info" style="max-width: 400px; text-align: left; margin-bottom: 2rem;">
+  <main>
+    <div>
+      <section class="contact-info">
         <h2>Contact Information</h2>
         <p>📍 123 Riverbend Way, Rapids Town, CO 80808</p>
         <p>📞 (800) 555-RAFT</p>
@@ -49,17 +106,27 @@
       <section class="contact-form">
         <h2>Send Us a Message</h2>
         <form action="#" method="post">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required>
+
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required>
-          <p>Purpose of Message:</p>
-          <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label>
-          <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label>
-          <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-          <label><input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter</label>
+
+          <label for="question">Your Question:</label>
+          <textarea id="question" name="question" required></textarea>
+
+          <label for="newsletter">Subscribe to newsletter</label>
+          <input type="checkbox" id="newsletter" name="newsletter">
+
+          <label for="contact-phone">Phone</label>
+          <input type="radio" id="contact-phone" name="contact-method" value="phone">
+
+          <label for="contact-email">Email</label>
+          <input type="radio" id="contact-email" name="contact-method" value="email">
+
+          <label for="contact-form">Contact Form</label>
+          <input type="radio" id="contact-form" name="contact-method" value="form">
+
           <button type="submit">Send Message</button>
         </form>
       </section>
