@@ -15,15 +15,7 @@
 }
 
 
-body {
-  font-family: Roboto, sans-serif;
-  line-height: 1.6;
-  background-color: #73add4;
-  color: #dd0f8e;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+
 
 main {
   flex: 1;
